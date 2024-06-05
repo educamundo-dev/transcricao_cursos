@@ -1,0 +1,6 @@
+#!D:\EDUCAMUNDO\CREW\transcricao_cursos\transcricao_cursos\.venv\Scripts\python.exe
+import sys
+from transcricao_cursos.main import run
+
+if __name__ == '__main__':
+    sys.exit(run())
