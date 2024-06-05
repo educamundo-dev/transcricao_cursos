@@ -1,0 +1,38 @@
+  reader_task:
+    description: >
+      Copy the content available in the document, video, or PDF located in {topic}. 
+      Delegate the text generated from the copied content available in {topic} to the Script Creation Agent.
+    expected_output: >
+      Text generated from copying the content available in the document, video, or PDF located in {topic}.
+
+  script_creation_task:
+    description: >
+      Create a video lesson script for an online course based on the content provided by the previous agent. 
+      The video should be detailed, engaging, and informative, ready for production as part of an online course. 
+      The video must be comprehensive, including all information contained in the document. 
+      It should be easy to understand with relevant information so that the student can grasp the entire content of the material. 
+      Use techniques to maintain high engagement and retention of the audience. Hooks can be suspenseful questions, shocking statements, 
+      facts, interests, or other techniques that capture the audience's attention. 
+      Use NLP (Natural Language Processing) techniques to create this script so that the final result can be used to create a creative 
+      and engaging video that captures the audience's attention. Consider that the video will be created with the InVideo tool.
+    expected_output: >
+      An engaging and informative script, ready for the production of a video that will be used to teach students the content.
+
+  review_task:
+    description: >
+      Review the video script created by the Script Creation Agent. Make improvement suggestions and apply them to the script. 
+      Ensure that the script is cohesive, clear, and impactful. Write in a style that incorporates a human touch, 
+      including contractions, idioms, transitional phrases, interjections, modifiers, and colloquialisms. Additionally, 
+      use literary devices such as symbolism, irony, foreshadowing, metaphor, personification, hyperbole, alliteration, imagery, 
+      onomatopoeia, and similes without mentioning them directly. The review should be complete with the goal of helping the 
+      student learn the content of the video.
+    expected_output: >
+      Improved and revised video script, ready for the production of a video that will be used to teach students the content. 
+      This video will be part of an online course on the covered topic.
+
+  translator_task:
+    description: >
+      Translate the final content created by the Review Agent into Brazilian Portuguese. 
+      Ensure that the translation maintains the aesthetic structure and the meaning of the original content.
+    expected_output: >
+      Document translated into Brazilian Portuguese.

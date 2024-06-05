@@ -1,0 +1,36 @@
+  reader_task:
+    description: >
+      Access the content available in the document or video located in {topic}.
+      Delegate the content read to the Script Creation Agent.
+    expected_output: >
+      Text generated from the content available in {topic}.
+
+  script_creation_task:
+    description: >
+      Create an exquisitely detailed, engaging, and informative video script, ready for production of a 
+      video that will be part of an online course. Use NLP (Natural Language Processing) techniques to 
+      create this script so that the final result can be used to create a creative, engaging video that 
+      captures the audience's attention. 
+      At the end, delegate the created script to the Review Agent.
+    expected_output: >
+      Engaging and informative script, ready for production of a video to be published on YouTube.
+
+  review_task:
+    description: >
+      Review and improve this same script ensuring that it is cohesive, clear and impactful.
+      Write in a style that incorporates a human touch, including contractions, idioms, transitional phrases,
+      interjections, modifiers, and colloquialisms. Additionally, use literary devices such as symbolism,
+      irony, foreshadowing, metaphor, personification, hyperbole, alliteration, imagery, onomatopoeia, and
+      similes without mentioning them directly.
+      Delegate the revised script to the Translator Agent for translation.
+    expected_output: >
+      Improved and revised script, ready to be used in the production of a YouTube video, which will be part of an online course on the covered topic.
+      Formatted as markdown without '```'.
+      
+
+  translator_task:
+    description: >
+      Translate the final content into Brazilian Portuguese.
+      Ensure that the translation maintains the aesthetic structure and meaning of the original content.
+    expected_output: >
+      Translated document in Brazilian Portuguese, formatted as markdown without '```'.
